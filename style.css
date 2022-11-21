@@ -1,0 +1,169 @@
+/* basic restart */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* BODY */
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/AppBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: "Noto Sans JP", sans-serif;
+  color: white;
+  font-size: 18px;
+}
+/* APP */
+.div--toDoApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40vw;
+  background-color: rgba(36, 11, 67, 0.4);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+}
+/* APP h2 */
+.div--toDoApp h2 {
+  padding: 20px 0;
+}
+/* ADD TODO */
+.div--inputNAddToDo {
+  display: flex;
+  width: 100%;
+}
+/* ADD TODO INPUT */
+.div--inputNAddToDo input {
+  flex-grow: 9;
+  padding: 15px;
+  font-size: 20px;
+  outline: none;
+  color: white;
+  background-color: transparent;
+  border: none;
+  /* border-bottom: 2px solid #270b4666; */
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+.div--inputNAddToDo input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 1px 1px 2px #270b46;
+}
+/* ADD TODO BUTTON */
+#div__input__button--addToDo {
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px #270b46;
+  cursor: pointer;
+}
+/* DISPLAYED LIST OF TODOS */
+ul {
+  padding: 20px 0 10px;
+  list-style: none;
+  width: 100%;
+}
+
+li {
+  position: relative;
+  display: flex;
+  padding: 15px 0 15px 30px;
+  margin-bottom: 7px;
+  width: 100%;
+  font-size: 18px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#displayDefault {
+  display: flex;
+  padding: 30px 0 15px 10px;
+  margin-bottom: 7px;
+  width: 100%;
+  font-size: 18px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+/* COMPLETE TODO BUTTON */
+.ul__li__button__doneToDo {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  border: 1px solid #270b46;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-top: 4px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #270b46;
+  cursor: pointer;
+}
+/* EDIT TODO BUTTON */
+/* .ul__li__button__editToDo {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: 5px;
+  text-shadow: 1px 1px 2px #270b46;
+  cursor: pointer;
+  width: 20px;
+  height: 22px;
+} */
+/* DELETE TODO BUTTON */
+.ul__li__button__deleteToDo {
+  position: relative;
+  margin-left: 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 18px;
+  width: 20px;
+  height: 22px;
+  text-shadow: 1px 1px 2px #270b46;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.fa-solid {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.div__deleteAll {
+  width: 100%;
+}
+
+#deleteAll {
+  display: none;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  cursor: pointer;
+}
