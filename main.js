@@ -27,15 +27,16 @@ let id = 0;
 
 // ADD
 const addToDo = () => {
-  todos.push({
-    title: inputTodo.value,
-    id: ++id,
-    completed: false,
-  });
   // MESSAGE THE USER if theres no value in the input
   if (inputTodo.value == "") {
     alert("You need fill in the input field!");
     return false;
+  } else {
+    todos.push({
+      title: inputTodo.value,
+      id: ++id,
+      completed: false,
+    });
   }
   render();
   saveToDo();
