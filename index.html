@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/Logo.png" />
     <!-- FontAwsome -->
     <script
       src="https://kit.fontawesome.com/364963514c.js"
       crossorigin="anonymous"
     ></script>
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,18 +23,32 @@
   <body>
     <!-- Whole app -->
     <div class="div--toDoApp">
-      <h2>TODOS (0)</h2>
+      <!-- Title -->
+      <div class="title">
+        <h2><i class="fa-solid fa-list"></i>Todo</h2>
+      </div>
       <!-- Input and add ToDo section  -->
-      <div class="div--inputNAddToDo">
-        <input type="text" placeholder="Add a new task..." />
+      <div class="div--input-Add">
+        <input id="inputTodo" type="text" placeholder="Add a new task..." />
         <button id="div__input__button--addToDo">
           <i class="fa-regular fa-plus"></i>
         </button>
       </div>
+      <div class="count">
+        <!-- Left todos counter -->
+
+        <p class="left-todos">Left: <span id="left-todos-counter">0</span></p>
+
+        <!-- Completed todos counter -->
+
+        <p class="completed-todos">
+          Completed: <span id="completed-todos-counter">0</span>
+        </p>
+      </div>
       <!-- List of todos -->
-      <div id="displayDefault">You've got no tasks left!</div>
-      <ul></ul>
-      <div class="div__deleteAll">
+      <div id="display-default-message">You've got no tasks left!</div>
+      <ul id="storeToDo"></ul>
+      <div class="div--deleteAll">
         <button id="deleteAll">Remove All</button>
       </div>
     </div>
