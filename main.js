@@ -29,7 +29,7 @@ let id = 0;
 const addToDo = () => {
   // MESSAGE THE USER if theres no value in the input
   if (inputTodo.value == "") {
-    alert("You need fill in the input field!");
+    alert("You need to add a task first!");
     return false;
   } else {
     todos.push({
@@ -89,6 +89,7 @@ const clearAllToDo = () => {
   render();
   saveToDo();
 };
+
 deleteAll.addEventListener("click", clearAllToDo);
 
 // RENDER
