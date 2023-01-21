@@ -172,6 +172,14 @@ input[type="checkbox"].tod::after {
   box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
 }
 
+@media screen and (min-width: 380px) {
+  input[type="checkbox"]::after {
+    line-height: 1.6vh;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 774px) {
   body {
     padding: 60px 150px;
@@ -203,5 +211,11 @@ input[type="checkbox"].tod::after {
 @media screen and (min-width: 1400px) {
   body {
     padding: 60px 400px;
+  }
+
+  input[type="checkbox"]::after {
+    line-height: 1.6vh;
+    font-size: 14px;
+    text-align: center;
   }
 }
