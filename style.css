@@ -197,6 +197,10 @@ input[type="checkbox"].tod::after {
     padding: 60px 200px;
   }
 
+  input[type="checkbox"]::after {
+    line-height: 1.2vh;
+  }
+
   #display-default-message {
     padding: 5px 0;
   }
